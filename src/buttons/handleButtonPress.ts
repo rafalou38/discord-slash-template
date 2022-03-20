@@ -27,7 +27,7 @@ export async function handleButtonPress(interaction: ButtonInteraction) {
     };
     let error: unknown;
     try {
-        result = await command.run(context.client, interaction, args);
+        result = await command.run(interaction, args);
     } catch (err) {
         error = err;
     }
